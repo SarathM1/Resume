@@ -124,7 +124,7 @@
         %{Additional details for this position. Can be left empty to omit this line}
     \job{2015 - 2016}
         {Unisync Technologies, Vyttila, Kerala.}
-        {Engineer, Embedded Systems}
+        {Engineer}
         {}
     
     \section[\faMortarBoard]{Education}
@@ -132,36 +132,39 @@
         {Vector India Institute,\\Bangalore, Karnataka}
         {Course in Embedded Systems}
         {}
+        
+    \job{2010 - 2014}
+        {Govt. College of Engineering\\Cherthala,\\Cochin University Of Science and Technology, Kerala}
+        {B.Tech (ECE)}
+        {}
 
     \section{Achievements, honours and awards}
-    \achievement{My first achievement}
-    \achievement{My second achievement}
+    \achievement{Awarded the highest rating \textbf{"Outstanding"} in three consecutive appraisal cycles in \textit{Tata Elxsi}}
+    \achievement{Final year academic project \textbf{"Hexapod"} was selected for the finals in State level
+competition}
+    \achievement{\textbf{Black Belt} holder in Shito-Ryu style of \textit{Karate}.}
 
     \section{General Skills}
     \smallskip % additional skip because tag outlines use up space
-    \tag{Tag 1}
-    \tag{Tag 2}
-    \tag{and}
-    \tag{another tag}
-    \tag{some more tags}
-    \tag{yet another one}
-    \tag{tags flow over}
-    \tag{to the next line}
-    \tag{if necessary}
+    \tag{Team Player}
+    \tag{Passionate Programmer}
+    \tag{Fast Learner}
+    \tag{Energetic}
+    \tag{Dedicated to perfection}
     
-    \medskip
-    Tags must be ordered by hand with newlines to get a nice layout, especially for long tags.
+   %\medskip
+   %Tags must be ordered by hand with newlines to get a nice layout, especially for long tags.
     
-    \section{Wheel Chart}
-    % This is taken from AltaCV
-    % see https://github.com/liantze/AltaCV for details
-    \wheelchart{1.5cm}{0.5cm}{% outer and inner diameter
-        6/8em/accent!20/Sleep,          % comma-separated list of
-        8/8em/accent!40/Daytime job,    % fraction of 24 / line length / color / label
-        2/8em/accent!80/Training,          % here, the color is shades of the accent color
-        3/8em/accent!60/Recovering from fighting criminals,
-        5/8em/accent/Being Batman
-    }
+   \section{Wheel Chart}
+   % This is taken from AltaCV
+   % see https://github.com/liantze/AltaCV for details
+   \wheelchart{1.5cm}{0.5cm}{% outer and inner diameter
+       6/8em/accent!20/Sleep,          % comma-separated list of
+       8/8em/accent!40/Daytime job,    % fraction of 24 / line length / color / label
+       2/8em/accent!80/Training,          % here, the color is shades of the accent color
+       3/8em/accent!60/Recovering from fighting criminals,
+       5/8em/accent/Being Batman
+   }
 }
 \makebody
 \clearpage
@@ -170,60 +173,63 @@
 \pagestyle{highlightmain}
 \highlightbar{}
 \mainbar{
-
-    \section{Another section}
-    
-    This page uses the page style \texttt{highlightmain} which shows the highlight bar (gray) and the main part (white background) but omits the header. 
-    The default page style is \texttt{headerhighlightmain} with all three elements.
-    If you don't want header, nor highlight bar, use page style \texttt{\textbackslash pagestyle\{empty\}}.
-    \medskip
-    Neither main, nor highlight bar must be filled to make this template work.
-    It is possible to use a page style with the highlight bar but leave it empty by setting an empty highlightbar \texttt{\textbackslash highlightbar\{\}}.
-
-    \vspace{0.5em}
-    \subsection{Subsection 1}
-    Demonstrate subsections.
-    
-    \subsection{Subsection 2}
-    Subsection are also bold face but a smaller font then section. They also omit the rule.
-    
-
+    \section{Projects}
+    \projects{2020 - 2021}{Battery Management System}{The objective of the project is to create an intelligent Battery Management System for Electric Vehicles}{Initial prototype for testing SPI communication between BMS master controller and a slave board using Raspberry Pi. Create Machine learning algorithms that predict the age and SOC of the battery cell. Creating a GUI and test-suite for the project}
+  
+  \projects{2018-2019}{Lidargen}{The objective of the project was to create a tool that would simulate the actual output from a LIDAR sensor. The tool takes three dimensional CAD objects as input and generates corresponding pointcloud. The User is given the freedom to place and orient the multiple meshes to create a virtual scenario}{To mathematical model the behavior of Lidar and simulate the same using Ray Casting. Designing a Qt based user interface.}
+  
+  \projects{2017 - 2018}{UAV Based Driver View Enhancement}{To develop a proof of concept, using a Drone to enhance the view of the Driver and cover blind spots for a larger area around the vehicel}{Designing a State Machine to control the Drone, Create a web application as a User interface using Python as a backend}
+  % \bigskip
+  % This page uses the page style \texttt{highlightmain} which shows the highlight bar (gray) and the main part (white background) but omits the header. 
+  % The default page style is \texttt{headerhighlightmain} with all three elements.
+  % If you don't want header, nor highlight bar, use page style \texttt{\textbackslash pagestyle\{empty\}}.
+  % \medskip
+  % Neither main, nor highlight bar must be filled to make this template work.
+  % It is possible to use a page style with the highlight bar but leave it empty by setting an empty highlightbar \texttt{\textbackslash highlightbar\{\}}.
+%
+  % \vspace{0.5em}
+  % \subsection{Subsection 1}
+  % Demonstrate subsections.
+  % 
+  % \subsection{Subsection 2}
+  % Subsection are also bold face but a smaller font then section. They also omit the rule.
 }
+
 \makebody
 
 
-\clearpage
-\pagestyle{empty}
-
-\section{Publications}
-\pubforcefullwidth
-
-Demonstrate what an \texttt{\textbackslash pagestyle\{empty\}} page looks like.
-Also show off the macros for publications that uses small icons for authors, date, journal and links.
-
-Achieving a good looking spacing can be tricky. For empty pagestyles where the full width is available use \texttt{\textbackslash pubforcefullwidth} to force the publoication list to take up all the available space.
-The (relative) lengths reserved for date, journal and links can be set with the parameters \texttt{\textbackslash pubdatelength}, \texttt{\textbackslash pubjournallength} and \texttt{\textbackslash publinklength} as in \texttt{\textbackslash setlength\{\textbackslash pubdatelength\}\{0.15 \textbackslash linewidth\}}.
-\bigskip
-
-\publication
-	{The turbulent gas structure in the centers of NGC~253 and the Milky Way} % Title
-	{\textbf{N. Krieger}, A. Bolatto, E. Koch, A. Leroy, E. Rosolowsky, F. Walter, A. Wei\ss, D. Eden, R. Levy, D. Meier, E. Mills, T. Moore, J. Ott, Y. Su, S. Veilleux} % Authors
-	{2020} % Year
-	{The Astrophysical Journal Vol. 899, Issue 2, id.158} % Journal
-	{\ADS{https://ui.adsabs.harvard.edu/abs/2020ApJ...899..158K}, \arXiv{https://arxiv.org/abs/2008.02518}} % ADS & arxiv links
-
-\publication
-	{The molecular ISM in the Super Star Clusters of the starburst NGC253} % Title
-	{\textbf{N. Krieger}, A. Bolatto, A. Leroy, R. Levy, E. Mills, D. Meier, S. Veilleux, F. Walter, A. Wei\ss} % Authors
-	{2020} % Year
-	{The Astrophysical Journal Vol.897, Issue 2, id.176} % Journal
-	{\ADS{https://ui.adsabs.harvard.edu/abs/2020ApJ...897..176K}, \arXiv{https://arxiv.org/abs/2006.08262}} % ADS & arxiv links
-
-\publication
-	{The Molecular Outflow in NGC\,253 at a Resolution of Two Parsecs} % Title
-	{\textbf{N. Krieger}, A. Bolatto, F. Walter, A. Leroy, L. Zschaechner, D. Meier, J. Ott, A. Wei\ss, E. Mills, S. Veilleux, M. Gorski} % Authors
-	{2019} % Year
-	{The Astrophysical Journal Vol.881, Issue 1, article id. 43, 20 pp} % Journal
-	{\ADS{https://ui.adsabs.harvard.edu/abs/2019ApJ...881...43K}, \arXiv{https://arxiv.org/abs/1907.00731}} % ADS & arxiv links
+%\clearpage
+%\pagestyle{empty}
+%
+%\section{Publications}
+%\pubforcefullwidth
+%
+%Demonstrate what an \texttt{\textbackslash pagestyle\{empty\}} page looks like.
+%Also show off the macros for publications that uses small icons for authors, date, journal and links.
+%
+%Achieving a good looking spacing can be tricky. For empty pagestyles where the full width is available use \texttt{\textbackslash pubforcefullwidth} to force the publoication list to take up all the available space.
+%The (relative) lengths reserved for date, journal and links can be set with the parameters \texttt{\textbackslash pubdatelength}, \texttt{\textbackslash pubjournallength} and \texttt{\textbackslash publinklength} as in \texttt{\textbackslash setlength\{\textbackslash pubdatelength\}\{0.15 \textbackslash linewidth\}}.
+%\bigskip
+%
+%\publication
+%	{The turbulent gas structure in the centers of NGC~253 and the Milky Way} % Title
+%	{\textbf{N. Krieger}, A. Bolatto, E. Koch, A. Leroy, E. Rosolowsky, F. Walter, A. Wei\ss, D. Eden, R. Levy, D. Meier, E. Mills, T. Moore, J. Ott, Y. Su, S. Veilleux} % Authors
+%	{2020} % Year
+%	{The Astrophysical Journal Vol. 899, Issue 2, id.158} % Journal
+%	{\ADS{https://ui.adsabs.harvard.edu/abs/2020ApJ...899..158K}, \arXiv{https://arxiv.org/abs/2008.02518}} % ADS & arxiv links
+%
+%\publication
+%	{The molecular ISM in the Super Star Clusters of the starburst NGC253} % Title
+%	{\textbf{N. Krieger}, A. Bolatto, A. Leroy, R. Levy, E. Mills, D. Meier, S. Veilleux, F. Walter, A. Wei\ss} % Authors
+%	{2020} % Year
+%	{The Astrophysical Journal Vol.897, Issue 2, id.176} % Journal
+%	{\ADS{https://ui.adsabs.harvard.edu/abs/2020ApJ...897..176K}, \arXiv{https://arxiv.org/abs/2006.08262}} % ADS & arxiv links
+%
+%\publication
+%	{The Molecular Outflow in NGC\,253 at a Resolution of Two Parsecs} % Title
+%	{\textbf{N. Krieger}, A. Bolatto, F. Walter, A. Leroy, L. Zschaechner, D. Meier, J. Ott, A. Wei\ss, E. Mills, S. Veilleux, M. Gorski} % Authors
+%	{2019} % Year
+%	{The Astrophysical Journal Vol.881, Issue 1, article id. 43, 20 pp} % Journal
+%	{\ADS{https://ui.adsabs.harvard.edu/abs/2019ApJ...881...43K}, \arXiv{https://arxiv.org/abs/1907.00731}} % ADS & arxiv links
 
 \end{document}
