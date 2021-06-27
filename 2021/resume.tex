@@ -169,16 +169,32 @@ competition}
 \makebody
 \clearpage
 
+\pagestyle{empty}
+% Declare new goemetry for the second page only.
+\newgeometry{margin=0.8in}
 
-\pagestyle{highlightmain}
-\highlightbar{}
-\mainbar{
+%\pagestyle{highlightmain}
+%\highlightbar{}
+%\mainbar{
     \section{Projects}
     \projects{2020 - 2021}{Battery Management System}{The objective of the project is to create an intelligent Battery Management System for Electric Vehicles}{Initial prototype for testing SPI communication between BMS master controller and a slave board using Raspberry Pi. Create Machine learning algorithms that predict the age and SOC of the battery cell. Creating a GUI and test-suite for the project}
   
   \projects{2018-2019}{Lidargen}{The objective of the project was to create a tool that would simulate the actual output from a LIDAR sensor. The tool takes three dimensional CAD objects as input and generates corresponding pointcloud. The User is given the freedom to place and orient the multiple meshes to create a virtual scenario}{To mathematical model the behavior of Lidar and simulate the same using Ray Casting. Designing a Qt based user interface.}
   
-  \projects{2017 - 2018}{UAV Based Driver View Enhancement}{To develop a proof of concept, using a Drone to enhance the view of the Driver and cover blind spots for a larger area around the vehicel}{Designing a State Machine to control the Drone, Create a web application as a User interface using Python as a backend}
+  \projects{2017 - 2018}{UAV Based Driver View Enhancement}{To develop a proof of concept, using a Drone to enhance the view of the Driver and cover blind spots for a larger area around the vehicle}{Designing a State Machine to control the Drone, Create a web application as a User interface using Python as a backend}
+  
+  \projects{2016-2017}{Pedestrian Detection \& Characterization System}{The objective of the project is to use Deep learning based intelligent algorithms for Driver Assistance and feature addition to Autonomous driving platform}%
+  {%
+  \begin{itemize}
+  \item Development of Deep learning algorithm
+ \item  Integration and testing with other modules providing additional ADAS features 
+\item  Testing and deployment of the ML model in a NVidia Jetson TX1 platform
+  \end{itemize}
+  }
+  
+  \projects{2016-2017}{Vehicle Detection}{Using Deep learning algorithms to detect, classify and locate vehicles on an urban road using Camera and depth sensors}{Development of Machine Learning algorithms for object detection, Testing and validation of the machine learning models, Data Analytics to visualize the performance and debugging the application code}
+  
+  \projects{2014-2016}{IoT Project}{To develop a cloud based data acquisition system using Raspberry PI that communicates with Programmable Logic Controllers and sends data to Cloud}{Full responsibility of software design, implementaion and testing of the project, Deploying webserver in AWS, Communication between Raspberry Pi and PLC using Modbus Protocol}
   % \bigskip
   % This page uses the page style \texttt{highlightmain} which shows the highlight bar (gray) and the main part (white background) but omits the header. 
   % The default page style is \texttt{headerhighlightmain} with all three elements.
@@ -193,9 +209,9 @@ competition}
   % 
   % \subsection{Subsection 2}
   % Subsection are also bold face but a smaller font then section. They also omit the rule.
-}
+%}
 
-\makebody
+%\makebody
 
 
 %\clearpage
