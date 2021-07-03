@@ -79,7 +79,8 @@
     %% sample.bib contains your publications
     \addbibresource{sample.bib}
 
-    \begin{document}
+
+\begin{document}
     \name{Sarath M}
     \tagline{Machine Learning Engineer}
     %% You can add multiple photos on the left or right
@@ -115,20 +116,19 @@
         %% then you can use \mastodon, with TWO arguments where the 2nd argument is
         %% the full hyperlink.
         % \mastodon{@username@instance}{https://instance.url/@username}
-        }
+    }
 
-        \makecvheader
-        %% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
-        % \AtBeginEnvironment{itemize}{\small}
+    \makecvheader
+    %% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+    % \AtBeginEnvironment{itemize}{\small}
 
-        %% Set the left/right column width ratio to 6:4.
-        \columnratio{0.6}
+    %% Set the left/right column width ratio to 6:4.
+    \columnratio{0.6}
 
-        % Start a 2-column paracol. Both the left and right columns will automatically
-        % break across pages if things get too long.
-        \begin{paracol}{2}
-            \cvsection{Experience}
-
+    % Start a 2-column paracol. Both the left and right columns will automatically
+    % break across pages if things get too long.
+    \begin{paracol}{2}
+        \cvsection{Experience}
             \cvevent{Specialist}{Tata Elxsi}{July 2016 -- Ongoing}{Technopark, Trivandrum}
             %\begin{itemize}
             %\item Job description 1
@@ -142,9 +142,7 @@
             %\item Job description 1
             %\item Job description 2
             %\end{itemize}
-
-            \cvsection{Most Proud of}
-
+        \cvsection{Most Proud of}
             \cvachievement{\faTrophy}{My Professional Acheievment}{Awarded the highest rating”Outstanding”in three consecutive appraisalcycles inTata Elxsi}
 
             \divider
@@ -157,15 +155,14 @@
 
 
             \medskip
-            \cvsection{Education}
-
+        \cvsection{Education}
             \cvevent{Course in Embedded Systems}{Vector India Institute, Bangalore, Karnataka}{2014}{}
             \divider
 
             \cvevent{B.Tech (ECE)}{Govt. College of Engineering Cherthala,\\Cochin University Of Science and Technology, Kerala}{2010 - 2014}{}
 
             \medskip
-            \cvsection{Interests}
+        \cvsection{Interests}
 
             % Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
             % \wheelchart{outer radius}{inner radius}{
@@ -181,142 +178,109 @@
                 9/8em/accent!30/Machine Learning
                 }
 
-                %\cvsection{Publications}
-
-                %\nocite{*}
-
-                %\printbibliography[heading=pubtype,title={\printinfo{\faBook}{Books}},type=book]
-
-                %\divider
-
-                %\printbibliography[heading=pubtype,title={\printinfo{\faFile*[regular]}{Journal Articles}},type=article]
-
-                %\divider
-
-                %\printbibliography[heading=pubtype,title={\printinfo{\faUsers}{Conference Proceedings}},type=inproceedings]
-
-                %% Switch to the right column. This will now automatically move to the second
-                %% page if the content is too long.
                 \switchcolumn
 
-                \cvsection{My Life Philosophy}
+        \cvsection{My Life Philosophy}
+            \begin{quote}
+                ``Quality is not an act; it is a habit.''
+            \end{quote}
 
-                \begin{quote}
-                    ``Quality is not an act; it is a habit.''
-                \end{quote}
+        \cvsection{Strengths}
+            \cvtag{Team Player}
+            \cvtag{Passionate Programmer}
+            \cvtag{Fast Learner}
+            \cvtag{Hard-working}
+            \cvtag{Eye for detail}\\
 
+            %\divider\smallskip
 
-                \cvsection{Strengths}
-                \cvtag{Team Player}
-                \cvtag{Passionate Programmer}
-                \cvtag{Fast Learner}
-                \cvtag{Hard-working}
-                \cvtag{Eye for detail}\\
+            %\cvtag{C++}
+            %\cvtag{Embedded Systems}\\
+            %\cvtag{Statistical Analysis}
+        \cvsection{Skills}
 
-                %\divider\smallskip
+            \begin{itemize}
+                \item Machine Learning Frameworks
+                    \linebreak
 
-                %\cvtag{C++}
-                %\cvtag{Embedded Systems}\\
-                %\cvtag{Statistical Analysis}
-                \cvsection{Skills}
+                    \cvskill{Tensorflow}{4}
+                    \cvskill{Scikit-learn}{5}
+                    \cvskill{NLTK}{3}
+                    \divider
 
-                \begin{itemize}
+                \item    Visualisation \& Data Processing
+                    \linebreak
 
-                    \item Machine Learning Frameworks
-                        \linebreak
+                    \cvskill{Pandas}{5}
+                    \cvskill{Numpy}{4}
+                    \cvskill{Flask}{5}
+                    \cvskill{Bokeh}{5}
+                    \cvskill{Plotly}{4}
+                    \cvskill{Grafana}{5}
+                    \cvskill{Twitter Bootstrap}{5}
+                    \cvskill{PyQt/PySide}{5}
+                    \divider
 
-                        \cvskill{Tensorflow}{4}
-                        \cvskill{Scikit-learn}{5}
-                        \cvskill{NLTK}{3}
-                        \divider
+                \item    Continuous Integration \& Test Automation
+                    \linebreak
 
-                    \item    Visualisation \& Data Processing
-                        \linebreak
+                    \cvskill{Jenkins}{4}
+                    \cvskill{Robot Framework}{5}
+                    \divider
 
-                        \cvskill{Pandas}{5}
-                        \cvskill{Numpy}{4}
-                        \cvskill{Flask}{5}
-                        \cvskill{Bokeh}{5}
-                        \cvskill{Plotly}{4}
-                        \cvskill{Grafana}{5}
-                        \cvskill{Twitter Bootstrap}{5}
-                        \cvskill{PyQt/PySide}{5}
-                        \divider
+                \item    Devops
+                    \linebreak
 
-                    \item    Continuous Integration \& Test Automation
-                        \linebreak
-
-                        \cvskill{Jenkins}{4}
-                        \cvskill{Robot Framework}{5}
-                        \divider
-
-                    \item    Devops
-                        \linebreak
-
-                        \cvskill{Docker}{4}
-                        \cvskill{Ansible}{4}
-                \end{itemize}
+                    \cvskill{Docker}{4}
+                    \cvskill{Ansible}{4}
+            \end{itemize}
 
 
-                %Other tools \& frameworks
-                %\cvskill{Kafka}{5}
-                %\cvskill{ROS}{5}
-                %\cvskill{MQTT}{5}
-                %\cvskill{Redis}{5}
-                %\cvskill{Influxdb}{4}
-                %\divider
+            %Other tools \& frameworks
+            %\cvskill{Kafka}{5}
+            %\cvskill{ROS}{5}
+            %\cvskill{MQTT}{5}
+            %\cvskill{Redis}{5}
+            %\cvskill{Influxdb}{4}
+            %\divider
 
-                %Development Tools
-                %Git, SVN, Zsh, Vim, Emacs,\\VS Code, Jira
+            %Development Tools
+            %Git, SVN, Zsh, Vim, Emacs,\\VS Code, Jira
 
-                %% Yeah I didn't spend too much time making all the
-                %% spacing consistent... sorry. Use \smallskip, \medskip,
-                %% \bigskip, \vspace etc to make adjustments.
-                \medskip
-
-
-                % \divider
-                \cvsection{Languages}
-
-                \cvskill{English}{5}
-                % \divider
-
-                \cvskill{Malayalam}{5}
-                % \divider
-
-                \cvskill{Hindi}{3}
-                %\cvsection{Referees}
-
-                %% \cvref{name}{email}{mailing address}
-                %\cvref{Prof.\ Alpha Beta}{Institute}{a.beta@university.edu}
-                %{Address Line 1\\Address line 2}
-
-                %\divider
-
-                %\cvref{Prof.\ Gamma Delta}{Institute}{g.delta@university.edu}
-                %{Address Line 1\\Address line 2}
+            %% Yeah I didn't spend too much time making all the
+            %% spacing consistent... sorry. Use \smallskip, \medskip,
+            %% \bigskip, \vspace etc to make adjustments.
+            \medskip
 
 
-            \end{paracol}
+            % \divider
+         \cvsection{Languages}
 
-            % use ONLY \newpage if you want to force a page break for
-            % ONLY the current column
-            \newpage
+            \cvskill{English}{5}
+            % \divider
 
-            \cvsection{Projects}
+            \cvskill{Malayalam}{5}
+            % \divider
 
-            %\cvevent{Project 1}{Funding agency/institution}{}{}
-            %\begin{itemize}
-            %\item Details
-            %\end{itemize}
+            \cvskill{Hindi}{3}
+            %\cvsection{Referees}
+
+            %% \cvref{name}{email}{mailing address}
+            %\cvref{Prof.\ Alpha Beta}{Institute}{a.beta@university.edu}
+            %{Address Line 1\\Address line 2}
 
             %\divider
 
-            %\cvevent{Project 2}{Funding agency/institution}{Project duration}{}
-            %A short abstract would also work.
+            %\cvref{Prof.\ Gamma Delta}{Institute}{g.delta@university.edu}
+            %{Address Line 1\\Address line 2}
+    \end{paracol}
 
-            \cvevent{Pedestrian Detection \& Characterization System}{2016-2017}{}{}
+    % use ONLY \newpage if you want to force a page break for
+    % ONLY the current column
+    \newpage
 
+    \cvsection{Projects}
+        \cvevent{Pedestrian Detection \& Characterization System}{2016-2017}{}{}
             \begin{itemize}
                 \item The objective of the project is to use Deep learning based intelligent algorithms for Driver Assistance and feature addition to Autonomous driving platform
                 \item Development of Deep learning algorithm
@@ -325,30 +289,25 @@
             \end{itemize}
             \divider
 
-            \cvevent{Battery Management System}{2020 - 2021}{}{}
+        \cvevent{Battery Management System}{2020 - 2021}{}{}
             \begin{itemize}
                 \item The objective of the project is to create an intelligent Battery Management System for Electric Vehicles
                 \item Initial prototype for testing SPI communication between BMS master controller and a slave board using Raspberry Pi. Create Machine learning algorithms that predict the age and SOC of the battery cell. Creating a GUI and test-suite for the project
             \end{itemize}
             \divider
 
-            \cvevent{Lidargen}{2018-2019}{}{}
+        \cvevent{Lidargen}{2018-2019}{}{}
             \begin{itemize}
-
                 \item  The objective of the project was to create a tool that would simulate the actual output from a LIDAR sensor. The tool takes three dimensional CAD objects as input and generates corresponding pointcloud. The User is given the freedom to place and orient the multiple meshes to create a virtual scenario
 
                 \item  To mathematical model the behavior of Lidar and simulate the same using Ray Casting. Designing a Qt based user interface.
             \end{itemize}
-
             \divider
 
-            \cvevent{UAV Based Driver View Enhancement}{2017 - 2018}{}{}
-
+        \cvevent{UAV Based Driver View Enhancement}{2017 - 2018}{}{}
             \begin{itemize}
                 \item  To develop a proof of concept, using a Drone to enhance the view of the Driver and cover blind spots for a larger area around the vehicle
 
                 \item  Designing a State Machine to control the Drone, Create a web application as a User interface using Python as a backend
             \end{itemize}
-
-
-        \end{document}
+\end{document}
