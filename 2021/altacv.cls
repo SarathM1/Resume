@@ -295,6 +295,22 @@
   \medskip\normalsize
 }
 
+\newcommand{\projects}[2]{%
+  {
+      \begin{minipage}{4in}
+      \large\color{accent}#1\par
+      \end{minipage}
+  }
+  \smallskip\normalsize
+  \ifstrequal{#2}{}{}{
+      \begin{minipage}{2.1in}
+        \textbf{#2}\par
+      \end{minipage}
+  \smallskip}
+  \linebreak
+  }
+
+
 \newcommand{\cvachievement}[3]{%
   \begin{tabularx}{\linewidth}{@{}p{2em} @{\hspace{1ex}} >{\raggedright\arraybackslash}X@{}}
   \multirow{2}{*}{\Large\color{accent}#1} & \bfseries\textcolor{emphasis}{#2}\\
@@ -399,6 +415,8 @@
   \input{#2}}%
 }
 \newcommand{\addnextpagesidebar}[2][]{\afterpage{\addsidebar[#1]{#2}}}
+
+
 
 \AtBeginDocument{%
   \pagestyle{empty}
