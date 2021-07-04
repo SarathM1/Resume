@@ -329,11 +329,21 @@
             \end{itemize}
             \divider
 
-        \cvevent{UAV Based Driver View Enhancement}{}{}{}
+        \cvevent{Natural Language Processing for JIRA ticket Analytics}{}{}{}
+            Use NLP and visualisation techniques to allow team members and managers to more effectively manage projects \linebreak
             \begin{itemize}
-                \item  To develop a proof of concept, using a Drone to enhance the view of the Driver and cover blind spots for a larger area around the vehicle
-
-                \item  Designing a State Machine to control the Drone, Create a web application as a User interface using Python as a backend
+                \item Data cleaning and Exploratory Data Analysis using NLTK
+                    \begin{itemize}
+                        \item Remove stop words and Stemming the corpus
+                        \item Named Entity Recognition using Spacy
+                        \item Visualisations using Word Cloud
+                    \end{itemize}
+                \item Search and filter feature using BERT model and Elasticsearch
+                \begin{itemize}
+                    \item Converting each ticket into fixed lenght vector using BERT
+                    \item Save the vectors into Elasticsearch
+                    \item Use Cosine Similarity to compare and filter tickets
+                \end{itemize}
             \end{itemize}
             \divider
 
