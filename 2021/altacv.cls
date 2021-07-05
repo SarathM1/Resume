@@ -205,7 +205,7 @@
 \NewInfoField{github}{\faGithub}[https://github.com/]
 % v1.?? Use fontawesome5 for Orcid symbol
 \NewInfoField{orcid}{\faOrcid}[https://orcid.org/]
-\NewInfoField{location}{\faMapMarker}
+\NewInfoField{location}{\faMapMarker*}
 
 % v1.2: Support for multiple photos
 \newlength{\altacv@photos@width}
@@ -291,7 +291,7 @@
   \textbf{\color{accent}#2}\par
   \smallskip}
   \ifstrequal{#3}{}{}{{\small\makebox[0.5\linewidth][l]{\faCalendar~#3}}}%
-  \ifstrequal{#4}{}{}{{\small\makebox[0.5\linewidth][l]{\faMapMarker~#4}}}\par
+  \ifstrequal{#4}{}{}{{\small\makebox[0.5\linewidth][l]{\faMapMarker*~#4}}}\par
   \medskip\normalsize
 }
 
@@ -308,7 +308,7 @@
       \end{minipage}
   \smallskip}
   \linebreak
-  }
+}
 
 
 \newcommand{\cvachievement}[3]{%
