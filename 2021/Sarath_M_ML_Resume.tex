@@ -144,10 +144,14 @@
             %\item Job description 2
             %\end{itemize}
         \cvsection{Most Proud of}
-            \cvachievement{\faTrophy}{My Professional Achievement}{Awarded the highest rating ”Outstanding” in three consecutive appraisal cycles in Tata Elxsi}
+            \cvachievement{\faTrophy}{My Professional Achievement}{
+                \begin{itemize}
+                    \item Awarded "Outstanding" in three consecutive years for contributions in Autonomous Car Platform
+                    \item Latest Project nominated for "Project Excelence Award"
+                \end{itemize}}
+            \cvachievement{\faGithub}{Github: github.com/sarathm1}{100+ side projects in personal Github account from 2015-2021}
             \cvachievement{\faGraduationCap}{My Academic Achievement}{Final year academic project "Hexapod" was selected for the finals in State level competition}
             \cvachievement{\faHeartbeat}{Martial Arts}{Black Belt holder in Shito-Ryu style of Karate}
-            \cvachievement{\faGithub}{Github}{100+ side projects in personal Github account from 2015-2021}
 
             \smallskip
         \cvsection{Education}
@@ -184,8 +188,7 @@
             \cvtag{Team Player}
             \cvtag{Passionate Programmer}
             \cvtag{Fast Learner}
-            \cvtag{Hard-working}
-            \cvtag{Eye for detail}\\
+            \cvtag{Hard-working}\\
 
             %\divider\smallskip
 
@@ -200,6 +203,7 @@
                     \cvskill{Tensorflow}{4}
                     \cvskill{Scikit-learn}{5}
                     \cvskill{NLTK}{3}
+                    \cvskill{Rapid Miner}{4}
                     \divider
 
                 \item Visualization \& Data Processing
@@ -207,12 +211,21 @@
 
                     \cvskill{Pandas}{5}
                     \cvskill{Numpy}{4}
-                    \cvskill{Flask}{5}
                     \cvskill{Bokeh}{5}
                     \cvskill{Plotly}{4}
                     \cvskill{Grafana}{5}
-                    \cvskill{Twitter Bootstrap}{5}
+                    \cvskill{Flask}{5}
                     \cvskill{PyQt4, Qt Designer}{5}
+                    \divider
+
+                \item MLOps
+                    \smallskip
+
+                    \cvskill{Airflow}{4}
+                    \cvskill{Docker}{4}
+                    \cvskill{MLFlow}{3}
+                    \cvskill{Weights and Biases}{3}
+                    \cvskill{Ansible}{4}
                     \divider
 
                 \item Distributed Systems
@@ -222,20 +235,7 @@
                     \cvskill{Paho MQTT}{5}
                     \cvskill{Redis}{4}
                     \cvskill{Apache Kafka}{3}
-                    \divider
 
-                \item Test Automation \& CI
-                    \smallskip
-
-                    \cvskill{Jenkins}{4}
-                    \cvskill{Robot Framework}{5}
-                    \divider
-
-                \item Devops
-                    \smallskip
-
-                    \cvskill{Docker}{4}
-                    \cvskill{Ansible}{4}
             \end{itemize}
 
 
@@ -315,22 +315,6 @@
             \end{itemize}
             \divider
 
-
-        \projects{Intelligent Battery Management System}{\small \faUser Role: Module Owner}
-            %The objective of the project is to estimate State of Health (SOH) and State of Charge (SOC) of a Lithium Ion battery using Machine Learning
-            \smallskip
-            \textbf{Responsibilities:}\\
-            \vspace{0.5em}
-            \begin{itemize}
-                \item Created a Tool and scripts for simplifying Regression Analysis
-                \item Implemented Neural Network Regression model as a benchmark
-                \item Implemented time-series forecasting models to improve upon the benchmark results
-                \item Supported in development of 'Digital Twin' of a cell with ML models mimicking the electrochemical characteristics
-                \item Developed a POC on Anomaly detection algorithm to demonstrate online-learning capabilities of the framework
-                \item Create a Data dashboard for monitoring sensor data in real-time using Flask and Bokeh
-            \end{itemize}
-            \divider
-
         \projects{Natural Language Processing for JIRA ticket Analytics}{\small \faUser Role: Project Lead}
             %Use NLP and visualization techniques to allow team members and managers to more effectively manage projects \linebreak
             \smallskip
@@ -351,6 +335,21 @@
                 \end{itemize}
             \end{itemize}
             \divider
+
+        \projects{Intelligent Battery Management System}{\small \faUser Role: Module Owner}
+            %The objective of the project is to estimate State of Health (SOH) and State of Charge (SOC) of a Lithium Ion battery using Machine Learning
+            \smallskip
+            \textbf{Responsibilities:}\\
+            \vspace{0.5em}
+            \begin{itemize}
+                \item Created a Tool and scripts for simplifying Regression Analysis
+                \item Implemented time-series forecasting models to improve upon the benchmark results
+                \item Supported in development of 'Digital Twin' of a cell with ML models mimicking the electrochemical characteristics
+                \item Developed a POC on Anomaly detection algorithm to demonstrate online-learning capabilities of the framework
+                \item Create a Data dashboard for monitoring sensor data in real-time using Flask and Bokeh
+            \end{itemize}
+            \divider
+
 
         \projects{Automated Testing and CI Framework}{\small \faUser Role: Project Lead}
             %A Test automation framework was developed with the following key features \linebreak
